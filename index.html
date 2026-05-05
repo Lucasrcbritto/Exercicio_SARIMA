@@ -7885,14 +7885,6 @@ análise descritiva → testes de estacionaridade → modelagem SARIMA → diagn
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>C:\Users\lucas\Downloads\Exercicio SARIMA\.venv\Lib\site-packages\tqdm\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
   from .autonotebook import tqdm as notebook_tqdm
-C:\Users\lucas\Downloads\Exercicio SARIMA\.venv\Lib\site-packages\statsforecast\models.py:3811: SyntaxWarning: invalid escape sequence '\h'
-  $$\hat{y}_t = \\frac{\hat{z}_t}{\hat{p}_t}$$
-C:\Users\lucas\Downloads\Exercicio SARIMA\.venv\Lib\site-packages\statsforecast\models.py:3989: SyntaxWarning: invalid escape sequence '\h'
-  $$\hat{y}_t = \\frac{\hat{z}_t}{\hat{p}_t}$$
-C:\Users\lucas\Downloads\Exercicio SARIMA\.venv\Lib\site-packages\statsforecast\models.py:4137: SyntaxWarning: invalid escape sequence '\h'
-  $$\hat{y}_t = \\frac{\hat{z}_t}{\hat{p}_t}$$
-C:\Users\lucas\Downloads\Exercicio SARIMA\.venv\Lib\site-packages\statsforecast\models.py:4477: SyntaxWarning: invalid escape sequence '\e'
-  \end{cases}
 </pre>
 </div>
 </div>
@@ -8511,7 +8503,7 @@ Interpretação:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Extraindo detalhes do modelo selecionado — compatível com statsforecast 2.x</span>
@@ -8565,7 +8557,7 @@ Chaves disponíveis no modelo:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Inspecionar estrutura completa do modelo</span>
@@ -8837,7 +8829,7 @@ Chaves disponíveis no modelo:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Ordem correta extraída do vetor arma: (p, q, P, Q, m, d, D)</span>
@@ -8890,7 +8882,7 @@ BIC: 1475.62
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Extraindo resíduos compatível com statsforecast 2.x</span>
@@ -8953,7 +8945,7 @@ BIC: 1475.62
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Teste de Ljung-Box: H0 = resíduos são ruído branco (sem autocorrelação)</span>
@@ -9020,7 +9012,7 @@ Rejeitar H₀ (p &lt; 0.05) indica estrutura remanescente no modelo
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Geração da previsão — compatível com statsforecast 2.x</span>
@@ -9076,7 +9068,7 @@ Rejeitar H₀ (p &lt; 0.05) indica estrutura remanescente no modelo
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Gráfico da previsão — compatível com statsforecast 2.x</span>
@@ -9150,7 +9142,7 @@ Rejeitar H₀ (p &lt; 0.05) indica estrutura remanescente no modelo
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Tabela resumida da previsão</span>
@@ -9255,7 +9247,7 @@ Feb/2028     101.5      90.0     112.9      83.9     119.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
